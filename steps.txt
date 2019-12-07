@@ -1,0 +1,17 @@
+部屬到 Heroku
+1. 建立一個 APP(名稱不能跟別人重複)
+
+2. 安裝Heroku CKI(命令列工具) - heroku
+3. 安裝Git命令列工具(64-bit Git for Windows Setup.) - git
+4. 在命令列登入 Heroku - heroku login
+
+5. 初始化新的 Git Repository
+    5.1 初始化：git init
+    5.2 設定遠端網址：heroku git:remote -a 專案名稱
+
+6. 確認Git Repository 的狀況 - git status (status:狀態的意思)
+
+7. 更新一個版本
+    7.1 把更動的檔案加入追蹤管理：git add .
+    7.2 建立一個版本 (Commit)：git commit -m "版本記錄訊息"
+    7.3 將最新的版本送到遠端(Heroku)：git push heroku master
